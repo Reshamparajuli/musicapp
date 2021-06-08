@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicapp</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">/
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+
+    <div class="main_div"> 
+        <div class="music_container">
+            <a href ="#"> <i class="far fa-heart love" id ="like" title="fav"></i></a>
+            <i class="fas fa-volume-down" ></i>
+            <input type="range" class="slider" id ="volumeslider" min="0" max="100" value="100" step="1">
+             <i class="fas fa-volume-up"></i>    
+            <div class="volume_container"></div>
+            <h2 id="title">Rula ke gaya ishq tera</h2>
+            <h3 id="artist">Stebin Ben</h3>
+            <div class="img_container">
+                <img src="images/rula_ke_gaya.jpg" alt="">
+            </div>
+            <audio src="music/rula_ke_gaya.mp3"></audio> 
+
+            <!-- timer-->
+            <div class="currenttime" id="progress_container">
+                <span id="current_time">00:00</span>
+                <span id="duration">4:57</span>
+            </div>
+           <div class="progress_bar"id ="progress_bar">
+               <div class="progressed" id ="progressed"></div>
+           </div>
+
+            <!-- controls -->
+            <div class="music_controls">
+               
+                <i class="fas fa-backward" id="previous" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="play/pause"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"> </script>
+</body>
+
+</html>

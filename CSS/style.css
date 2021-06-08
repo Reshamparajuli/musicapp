@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "jost",sans-serif;
+
+}
+.main_div{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(196, 198, 243);
+    display:grid;
+    place-items: center;
+}
+.music_container{
+    width: 30rem;
+    height:55rem;
+    background-color: #21ce97ad;
+    border-radius:2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    padding:2rem;
+}        
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing:0.2rem;
+    word-spacing: 0.5rem;
+    color:#171717;
+    margin:2rem 0 0.5rem 0;
+    font-weight:600;
+    text-shadow:0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+
+}
+.music_container #artist{
+    color:rgb(51, 30, 14);
+    letter-spacing:0.1rem;
+    font: weight 4px ;
+    padding:1.5rem;
+}
+.img_container{
+    width:25rem;
+    height:25rem;
+    margin:auto;
+   
+}
+img{ 
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 3 rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.music_controls{
+    width:20rem;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top:50px;
+    text-align: center;
+    
+
+}
+.music_controls .fas{
+    color:black;
+    font-size: 2rem;
+    cursor:pointer;
+    filter:drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+.music_controls .main_button{
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+    background-color:black;
+    color:rgb(230, 224, 215);
+    font-size:1.4rem;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    
+}
+.love{
+    margin-right: 400px;
+
+}
+.volume_container {
+    position:relative;
+    width:100%;
+    height:15px;
+    z-index:3;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.volume_container img{
+    width:16px;
+    height:16px;
+    margin:0 5px;
+}
+.slider{
+    width: 110px;
+    height: 3px;
+}
+.currenttime{
+    position:relative;
+    z-index:3;
+    padding:0 12px 5px;
+    color:lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+.currenttime span{
+    font-size: 12px; 
+    color: black;                     
+
+}
+.seekslider{
+    width:100px;
+    height:2px !important;
+    -webkit-appearance: none;
+    border-radius:10px;
+    background-color: rgb(250, 246, 244);
+    outline:none;
+
+}
+.progress_bar{
+    height:4px;
+    width:100%;
+    background-color: rgb(233, 212, 212);
+    cursor: pointer;
+}
+.progressed{
+    height:4px;
+    background-color:coral;
+    width:0%;
+}
